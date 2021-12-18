@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="full">
+
+        <h1 class="head1">Payment Form</h1>
+        <em>required the fields followed by *</em>
+        <hr>
+        <h3>Contact information</h3>
+        <form action="mailto:ayusshvashishth2208@gmail.com" method="post" enctype="text/plain"> 
+           <div class="container "> Name: 
+            <input type="text" name="name" id="name" ></div>
+            
+            <fieldset>
+                    <legend >Gender:</legend>
+                    <div>
+                        Male: <input type="radio" name="gneder" id="male">   Felmale: <input type="radio" name="gender" id="female">
+                    </div>
+                </fieldset>
+            <legend for="address"> Address:</legend>
+            <textarea name="address" id="add" cols="30" rows="10"></textarea>
+            <div class= "container">
+                Email:
+            <input type="email" name="email" id="emailID">
+            </div>
+            <div class= "container">
+                Date of birth:
+            <input type="date" name="date" id="dateid">
+            </div>
+            <div class= "container">
+                Pincode:
+            <input type="number" name="pin" id="pinid">
+            </div>
+            <hr>
+            
+            <h1 class="head1"> Payment Information</h1>
+            <div class="container">
+                Cardtype:
+                <select name="cardtype" id="cardtypeid">
+                    <option value=""> -- Select your cardtype --</option>
+                    <option value="">Visa</option>
+                    <option value="">Rupay</option>
+                    <option value="">Debit card</option>
+                </select>
+            </div>
+    
+            <div class="container">
+                Card number: <input type="number" name="cardnum" id="cardnumid">    
+            </div>
+            <div class="container">
+                Expiry date: <input type="date" name="expdate" id="expdateid">
+            </div>
+            <div class="container"> 
+                CVV: <input type="password" name="cvv" id="cvvid">
+            </div>
+            <input type="submit" value="Pay now" class="button"> 
+            <input type="reset" class="button">
+    
+            </form>
+    
+    
+        
+    </div>
+
+</body>
+</html>
